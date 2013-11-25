@@ -1,4 +1,4 @@
-API.on(API.DJ_ADVANCE, function() { $(“#woot”).click() });
+API.on(API.DJ_ADVANCE, function() { $("#woot").click() });
 API.on(API.CHAT, parseChat);
 
 function parseChat(data){
