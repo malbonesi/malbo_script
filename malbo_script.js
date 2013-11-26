@@ -13,8 +13,8 @@ width: '110px',
 height: '30px',
 cursor: 'pointer',
 color: '#3B45A7',
-border-style: 'solid',
-border-width: '1px' 
+borderStyle: 'solid',
+borderWidth: '1px' 
 });
 
 $('#bot-icon').click(function() { $('#bot-menu').slideToggle('fast'); });
