@@ -12,7 +12,8 @@ top: '8px',
 width: '110px',
 height: '30px',
 cursor: 'pointer',
-color: '#3B45A7',
+color: '#8694B2',
+textAlign: 'center',
 borderStyle: 'solid',
 borderWidth: '1px' 
 });
