@@ -5,7 +5,7 @@ var iconHTML = "<div id='bot-icon'>Darwin</div>";
 var menuHTML = "<div id='bot-menu'>Heyo</div>";
 
 $('#chat-header').append(iconHTML, menuHTML);
-$('#bot-icon', '#bot-menu').css({
+$('#bot-icon').css({
 position: 'absolute',
 left: '192px',
 top: '8px',
