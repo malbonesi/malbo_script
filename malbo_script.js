@@ -4,7 +4,7 @@ API.on(API.CHAT, parseChat);
 var iconHTML = "<div id='bot-icon'>Darwin</div>";
 var menuHTML = "<div id='bot-menu'>Heyo</div>";
 
-$('#chat-header').append(menuHTML);
+$('#chat-header').append(iconHTML, menutHTML);
 $('#bot-icon').css({
 position: 'absolute',
 left: '192px',
