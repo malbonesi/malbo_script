@@ -14,7 +14,10 @@ height: '30px',
 cursor: 'pointer',
 color: '#8694B2',
 textAlign: 'center',
-borderStyle: 'solid',
+fontFamily: '\'Open Sans\', sans-serif',
+fontSize: '18px',
+fontWeight: '400',
+borderStyle: 'none',
 borderWidth: '1px' 
 });
 
