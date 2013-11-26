@@ -14,8 +14,8 @@ height: '30px',
 cursor: 'pointer',
 color: '#3B45A7',
 border-style: 'solid',
-border-wifth: '1px' 
-})
+border-width: '1px' 
+});
 
 $('#bot-icon').click(function() { $('#bot-menu').slideToggle('fast'); });
 
