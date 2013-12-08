@@ -1,11 +1,13 @@
 API.on(API.DJ_ADVANCE, function() { $("#woot").click() });
 API.on(API.CHAT, parseChat);
 
+
+//This is a simple UI
 var iconHTML = "<div id='bot-icon'>Darwin</div>";
 var menuHTML = "<div id='bot-menu'>Heyo</div>";
 
 $('#chat-header').append(iconHTML, menuHTML);
-$('#bot-icon').css({
+$('#bot-icon, #bot-menu').css({
 position: 'absolute',
 left: '192px',
 top: '8px',
@@ -17,8 +19,6 @@ textAlign: 'center',
 fontFamily: '\'Open Sans\', sans-serif',
 fontSize: '18px',
 fontWeight: '400',
-borderStyle: 'none',
-borderWidth: '1px' 
 });
 
 $('#bot-icon').click(function() { $('#bot-menu').slideToggle('fast'); });
