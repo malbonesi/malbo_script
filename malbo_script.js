@@ -39,9 +39,9 @@ zIndex: '30000'
 
 $('#bot-options').css({
 listStyle: 'none',
-marginLeft: '0',
-paddingLeft: '1em',
-textIndent: '-1em'
+marginLeft: '0px',
+paddingLeft: '0px',
+textIndent: '0px'
 });
 
 $('#bot-icon').click(function() { $('#bot-menu').slideToggle('fast'); });
