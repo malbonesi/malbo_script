@@ -44,7 +44,7 @@ listStyle: 'none'
 $('#captext').css({
 maxLength: '2',
 size: '2',
-overflow: 'auto'
+border: '1px solid #323742'
 });
 
 $('#bot-icon').click(function() { $('#bot-menu').slideToggle('fast'); });
