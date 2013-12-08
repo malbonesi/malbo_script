@@ -34,7 +34,8 @@ fontFamily: '\'Open Sans\', sans-serif',
 fontSize: '18px',
 fontWeight: '400',
 backgroundColor: '#111317',
-display: 'none'
+display: 'none',
+zIndex: '30000'
 });
 
 $('#bot-icon').click(function() { $('#bot-menu').slideToggle('fast'); });
