@@ -44,8 +44,9 @@ listStyle: 'none'
 $('#captext').css({
 maxLength: '2',
 size: '2',
-width: '5px',
-border: '1px solid #323742'
+width: '25px',
+border: '1px solid',
+backgroundColor: '#323742'
 });
 
 $('#bot-icon').click(function() { $('#bot-menu').slideToggle('fast'); });
