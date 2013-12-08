@@ -31,7 +31,7 @@ color: '#8694B2',
 textAlign: 'center',
 fontFamily: '\'Open Sans\', sans-serif',
 fontSize: '12px',
-fontWeight: '400',
+fontWeight: '0',
 backgroundColor: '#111317',
 display: 'none',
 zIndex: '30000'
