@@ -4,7 +4,7 @@ API.on(API.CHAT, parseChat);
 
 //This is a simple UI
 var iconHTML = "<div id='bot-icon'>Darwin</div>";
-var menuHTML = "<div id='bot-menu'><ul><li>Greet</li><li>Facts</li><li>Cap: <textarea rows='1' cols='2'</li></ul></div>";
+var menuHTML = "<div id='bot-menu'><ul><li>Greet</li><li>Facts</li><li>Cap: <textarea rows='2' cols='1'</li></ul></div>";
 
 $('#chat-header').append(iconHTML, menuHTML);
 $('#bot-icon').css({
@@ -30,7 +30,7 @@ height: '100px',
 color: '#8694B2',
 textAlign: 'center',
 fontFamily: '\'Open Sans\', sans-serif',
-fontSize: '18px',
+fontSize: '12px',
 fontWeight: '400',
 backgroundColor: '#111317',
 display: 'none',
