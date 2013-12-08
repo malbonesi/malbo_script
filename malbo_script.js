@@ -33,7 +33,8 @@ textAlign: 'center',
 fontFamily: '\'Open Sans\', sans-serif',
 fontSize: '18px',
 fontWeight: '400',
-backgroundColor: '#111317'
+backgroundColor: '#111317',
+display: 'none'
 });
 
 $('#bot-icon').click(function() { $('#bot-menu').slideToggle('fast'); });
