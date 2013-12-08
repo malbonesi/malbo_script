@@ -28,7 +28,7 @@ top: '38px',
 width: '110px',
 height: '100px',
 color: '#8694B2',
-textAlign: 'center',
+textAlign: 'left',
 fontFamily: '\'Open Sans\', sans-serif',
 fontSize: '12px',
 fontWeight: '0',
@@ -38,10 +38,7 @@ zIndex: '30000'
 });
 
 $('#bot-options').css({
-listStyle: 'none',
-marginLeft: '0px',
-paddingLeft: '0px',
-textIndent: '0px'
+listStyle: 'none'
 });
 
 $('#bot-icon').click(function() { $('#bot-menu').slideToggle('fast'); });
