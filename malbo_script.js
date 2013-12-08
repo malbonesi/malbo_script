@@ -24,7 +24,7 @@ fontWeight: '400'
 $('#bot-menu').css({
 position: 'absolute',
 left: '192px',
-top: '8px',
+top: '38px',
 width: '110px',
 height: '100px',
 cursor: 'pointer',
