@@ -43,7 +43,7 @@ listStyle: 'none'
 
 $('#captext').css({
 maxLength: '2',
-resize: 'none',
+size: '2',
 overflow: 'auto'
 });
 
