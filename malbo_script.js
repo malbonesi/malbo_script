@@ -41,7 +41,7 @@ $('#bot-options').css({
 listStyle: 'none'
 });
 
-$('#textcap').css({
+$('#captext').css({
 resize: 'none',
 overflow: 'auto'
 });
