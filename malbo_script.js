@@ -4,10 +4,16 @@ API.on(API.CHAT, parseChat);
 
 //This is a simple UI
 var iconHTML = "<div id='bot-icon'>Darwin</div>";
-var menuHTML = "<div id='bot-menu'><ul id='bot-options'><li>Greet</li><li>Facts</li><li>Cap: <input id='captext' type='text' maxLength='2' size='2'></input></li></ul></div>";
+var menuHTML = "<div id='bot-menu'>\
+                    <ul id='bot-options'>\
+                    <li>Greet</li>\
+                    <li>Facts</li>\
+                    <li>Cap: <input id='captext' type='text' maxLength='2' size='2'></input></li>\
+                    </ul>\
+                </div>";
 
 $('#chat-header').append(iconHTML, menuHTML);
-$('#bot-icon').css({
+$('#bot-icon, #bot-menu').css({
 position: 'absolute',
 left: '192px',
 top: '8px',
@@ -17,21 +23,13 @@ cursor: 'pointer',
 color: '#8694B2',
 textAlign: 'center',
 fontFamily: '\'Open Sans\', sans-serif',
-fontSize: '18px',
-fontWeight: '400'
+fontSize: '18px'
 });
 
 $('#bot-menu').css({
-position: 'absolute',
-left: '192px',
-top: '38px',
-width: '110px',
-height: '100px',
-color: '#8694B2',
 textAlign: 'left',
-fontFamily: '\'Open Sans\', sans-serif',
+top: '38px',
 fontSize: '12px',
-fontWeight: '0',
 backgroundColor: '#111317',
 display: 'none',
 zIndex: '30000'
