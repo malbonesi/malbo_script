@@ -60,7 +60,7 @@ function parseChat(data){
 
     var msg = data.message;
     
-    if (API.getUser(data.fromID).permission > 0) { API.sendChat("yes"); }
+    if (API.getUser(data.fromID).permission == 1) { API.sendChat("yes"); }
     
     if (data.fromID == "50aeb40bd6e4a94f7747c5a4"){   
         if (msg == "-purr") { API.sendChat("Meow?"); }
