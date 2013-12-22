@@ -2,7 +2,7 @@ API.on(API.DJ_ADVANCE, function() { $("#woot").click() });
 API.on(API.CHAT, parseChat);
 
 //Move user list to left
-$('#user-lists').css('left', '0px');
+//$('#user-lists').css('left', '0px');
 
 //This is a simple UI
 var iconHTML = "<div id='bot-icon'>Darwin</div>";
@@ -59,6 +59,8 @@ $('#bot-icon').click(function() { $('#bot-menu').slideToggle('fast'); });
 function parseChat(data){
 
     var msg = data.message;
+    
+    if (API.getUser(data.fromID).permission > 0) { API.sendChat("yes"); }
     
     if (data.fromID == "50aeb40bd6e4a94f7747c5a4"){   
         if (msg == "-purr") { API.sendChat("Meow?"); }
