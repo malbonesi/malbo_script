@@ -1,6 +1,8 @@
 API.on(API.DJ_ADVANCE, function() { $("#woot").click() });
 API.on(API.CHAT, parseChat);
 
+//Move user list to left
+$('#user-lists').css('left', '0px');
 
 //This is a simple UI
 var iconHTML = "<div id='bot-icon'>Darwin</div>";
