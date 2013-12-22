@@ -57,11 +57,13 @@ backgroundColor: '#323742'
 $('#bot-icon').click(function() { $('#bot-menu').slideToggle('fast'); });
 
 function parseChat(data){
+
     var msg = data.message;
-    if (data.fromID == "50aeb40bd6e4a94f7747c5a4"){
-        if (msg == "-purr")) { API.sendChat("Meow?"); }
-        if (msg.match(/-purr/)) { API.sendChat("Meow?"); }
+    
+    if (data.fromID == "50aeb40bd6e4a94f7747c5a4"){   
+        if (msg == "-purr") { API.sendChat("Meow?"); }
     } 
+        
 }
 
 /*
