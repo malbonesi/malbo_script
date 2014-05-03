@@ -1,3 +1,7 @@
+$("#playback-container").css("visibility", "hidden");
+$(".background").css("visibility", "hidden");
+$("#no-dj").css("visibility", "hidden");
+
 API.on(API.DJ_ADVANCE, function() { $("#woot").click(); });
 API.on(API.CHAT, parseChat);
 
