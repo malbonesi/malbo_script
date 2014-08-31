@@ -1,5 +1,5 @@
 $('#playback-container, .background, #no-dj').css('visibility', 'hidden');
-$('playback').off('mouseenter');
+$('#playback').off('mouseenter');
 //$(".background").css("visibility", "hidden");
 //$("#no-dj").css("visibility", "hidden");
 
