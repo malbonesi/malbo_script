@@ -3,7 +3,7 @@ $('playback').off('mouseenter');
 //$(".background").css("visibility", "hidden");
 //$("#no-dj").css("visibility", "hidden");
 
-API.on(API.DJ_ADVANCE, function() { $('#woot').click(); });
+API.on(API.ADVANCE, function() { $('#woot').click(); });
 API.on(API.CHAT, parseChat);
 
 function parseChat(data){
