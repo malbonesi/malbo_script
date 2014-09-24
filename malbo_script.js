@@ -1,7 +1,10 @@
 $('#playback-container, .background, #no-dj').css('visibility', 'hidden');
 $('#playback').off('mouseenter');
-//$(".background").css("visibility", "hidden");
-//$("#no-dj").css("visibility", "hidden");
+
+//Add app-left to include user-list
+//Can probably piggy-back on whatever is used for responsive design. Just take the height and stuff from app-right
+//Should probably set up element before hand in an object or something?
+$('.app-right').before("<div id='app-left'></div>");
 
 API.on(API.ADVANCE, function() { $('#woot').click(); });
 API.on(API.CHAT, parseChat);
