@@ -4,7 +4,9 @@ $('#playback').off('mouseenter');
 //Add app-left to include user-list
 //Can probably piggy-back on whatever is used for responsive design. Just take the height and stuff from app-right
 //Should probably set up element before hand in an object or something?
-$('.app-right').before("<div id='app-test'></div>");
+$('.app-right').before("<div id='app-left'></div>");
+var chatClone = $('chat');
+$('#app-left').append(chatClone);
 
 API.on(API.ADVANCE, function() { $('#woot').click(); });
 API.on(API.CHAT, parseChat);
