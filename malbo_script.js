@@ -9,6 +9,8 @@ $('#app-left').css('border', '1px solid black');
 $('#user-lists').appendTo('#app-left').css({'display':'block','visibility':'visible'});
 
 
+console.log($('.app-right').css());
+
 API.on(API.ADVANCE, function() { $('#woot').click(); });
 API.on(API.CHAT, parseChat);
 
