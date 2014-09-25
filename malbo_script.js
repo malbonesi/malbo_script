@@ -5,7 +5,8 @@ $('#chat-button, #users-button').off('click');
 //Can probably piggy-back on whatever is used for responsive design. Just take the height and stuff from app-right
 //Should probably set up element before hand in an object or something?
 $('.app-right').before("<div id='app-left'></div>");
-$('#user-lists').appendTo('#app-left').css('visibility', 'visible');
+$('#app-left').css('border', '1px solid black');
+$('#user-lists').appendTo('#app-left').css({'display':'block','visibility':'visible'});
 
 
 API.on(API.ADVANCE, function() { $('#woot').click(); });
