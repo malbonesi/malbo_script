@@ -1,19 +1,20 @@
 $('#playback-container, .background, #no-dj').css('visibility', 'hidden');
 $('#playback').off('mouseenter');
-$('#chat-button, #users-button').off('click');
+//$('#chat-button, #users-button').off('click');
 //Add app-left to include user-list
 //Can probably piggy-back on whatever is used for responsive design. Just take the height and stuff from app-right
 //Should probably set up element before hand in an object or something?
-$('.app-right').before("<div id='app-left'></div>");
-$('#app-left').css('border', '1px solid black');
-$('#user-lists').appendTo('#app-left').css({'display':'block','visibility':'visible'});
+//$('.app-right').before("<div id='app-left'></div>");
+//$('#app-left').css('border', '1px solid black');
+//$('#user-lists').appendTo('#app-left').css({'display':'block','visibility':'visible'});
 
 
 console.log($('.app-right').css());
 
-API.on(API.ADVANCE, function() { $('#woot').click(); });
+API.on(API.ADVANCE, autoWoot);
 API.on(API.CHAT, parseChat);
 
+function autoWoot(){ $('#woot').click(); }
 function parseChat(data){
 
     var msg = data.message;
