@@ -8,13 +8,11 @@ $('#playback').off('mouseenter');
 //$('#app-left').css('border', '1px solid black');
 //$('#user-lists').appendTo('#app-left').css({'display':'block','visibility':'visible'});
 
-
-console.log($('.app-right').css());
-
-API.on(API.ADVANCE, autoWoot);
+API.on(API.ADVANCE, woot);
+API.on(API.DJ_ADVANCE, woot);
 API.on(API.CHAT, parseChat);
 
-function autoWoot(){ $('#woot').click(); }
+function woot(){ $('#woot').click(); }
 function parseChat(data){
 
     var msg = data.message;
